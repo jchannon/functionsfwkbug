@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Include="Function.fs" />
+<!--        <Content Include="appsettings.json" />-->
+        <None Update="appsettings*.json" CopyToOutputDirectory="PreserveNewest" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Google.Cloud.Functions.Hosting" Version="1.0.0-beta04" />
+    </ItemGroup>
+</Project>
